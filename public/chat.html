@@ -40,27 +40,29 @@
     </head>
 
     <body>
-            <div class="chat">
-                <div id="sidebar" class="chat__sidebar">
-                    
-                </div>
-
-                <div class="chat__main chat-font">
-                    <header class="chat-header roomName-font">
-                        <h1><i class="fas fa-smile"></i> Let's Chat</h1>
-                        <button class="leave"><a href="index.html" class="btn">Leave Room</a></button>
-                    </header>
-                    <div id="messages" class="chat__messages"></div>
-                    <div class="compose">
-                        <form id="msg-form" class="chat-font">
-                            <input placeholder="Message" name='message' required autocomplete="off">
-                            <button style="border-radius: 20px" >Submit</button>
-                        </form>
-                    </div>
-                    <button id="send-location" style="border-radius: 20px">Send location</button>
-                </div>
+        <div class="chat">
+            <div id="sidebar" class="chat__sidebar">
+                
             </div>
 
+            <div class="chat__main chat-font">
+                <header class="chat-header roomName-font">
+                    <h1><i class="fas fa-smile"></i> Let's Chat</h1>
+                </header>
+                <div id="messages" class="chat__messages"></div>
+                <div class="compose">
+                    <form id="msg-form" class="chat-font">
+                        <input placeholder="Message" name='message' required autocomplete="off">
+                        <button style="border-radius: 20px" >Submit</button>
+                    </form>
+                </div>
+
+                <div class="compose">
+                    <button id="send-location" style="border-radius: 20px">Send location</button>
+                    <button class="leave"><a href="index.html" class="btn">Leave Room</a></button>
+                </div>
+            </div>
+        </div>
 
         <script id="message-template" type="text/html">
             <div class="message">
