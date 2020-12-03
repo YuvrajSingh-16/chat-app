@@ -42,12 +42,13 @@
     <body>
             <div class="chat">
                 <div id="sidebar" class="chat__sidebar">
-
+                    
                 </div>
+
                 <div class="chat__main chat-font">
                     <header class="chat-header roomName-font">
                         <h1><i class="fas fa-smile"></i> Let's Chat</h1>
-                        <a href="index.html" class="btn">Leave Room</a>
+                        <button class="leave"><a href="index.html" class="btn">Leave Room</a></button>
                     </header>
                     <div id="messages" class="chat__messages"></div>
                     <div class="compose">
@@ -56,7 +57,6 @@
                             <button style="border-radius: 20px" >Submit</button>
                         </form>
                     </div>
-                   
                     <button id="send-location" style="border-radius: 20px">Send location</button>
                 </div>
             </div>
@@ -83,12 +83,12 @@
         </script>
 
         <script id="sidebar-template" type="text/html">
-            <h3 class="roomName-font"><span class="glyphicon glyphicon-comment"></span> Room name:</h3>
+            <h3 class="roomName-font"><span class="glyphicon glyphicon-comment"></span> Room name</h3>
             <h2 class="room-title roomName-font">{{room}}</h2>
             <h3 class="list-title chat-font">Users</h3>
             <ul class="users usersList-font">
                 {{#users}}          <!-- To print the array -->
-                    <li><span class="glyphicon glyphicon-fire"> {{username}} </li>
+                    <li><span class="glyphicon glyphicon-user"> {{username}}</li>
                 {{/users}}
             </ul>
         </script>

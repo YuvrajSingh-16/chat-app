@@ -175,6 +175,10 @@ button:disabled {
     font-size: 14px;
 }
 
+.leave{
+    background: #6c12a1;
+    border-radius: 20px;
+}
 /* Chat Sidebar Styles */
 
 .room-title {
