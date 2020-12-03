@@ -12,6 +12,7 @@ html {
 
 input {
     font-size: 14px;
+    width: 100%;
 }
 
 body {
@@ -56,8 +57,12 @@ button:disabled {
     background: #7c5cbf94;
 }
 
-/* Join Page Styles */
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
 
+/* Join Page Styles */
 .centered-form {
     background: #333744;
     width: 100vw;
@@ -95,6 +100,16 @@ button:disabled {
     background: #333744;
     width: 225px;
     overflow-y: scroll
+}
+
+.chat-header {
+    background: #7C5CBF; 
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 /* Chat styles */
