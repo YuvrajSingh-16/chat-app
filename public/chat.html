@@ -10,16 +10,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">       
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <style>
             .chat-font{
-                font-family: 'Sansita Swashed', cursive;
+                font-family: 'Nunito', sans-serif;
             }
             .roomName-font{
                 font-family: 'Sansita Swashed', cursive;
@@ -28,14 +31,6 @@
             .usersList-font{
                 font-family: 'Yanone Kaffeesatz', sans-serif;
             }
-            .btn {
-                cursor: pointer;
-                padding: 5px 15px;
-                background: var(--light-color);
-                color: var(--dark-color-a);
-                border: 0;
-                font-size: 17px;
-            }   
         </style>
     </head>
 
@@ -46,19 +41,19 @@
             </div>
 
             <div class="chat__main chat-font">
-                <header class="chat-header roomName-font">
-                    <h1><i class="fas fa-smile"></i> Let's Chat</h1>
+                <header class="chat-header">
+                    <h1><span class="glyphicon glyphicon-comment"></span> <b>Let's Chat</b></h1>
+                    <a href="index.html"></a><button type="button" class="btn btn-outline-secondary">Leave Room</button></a>
                 </header>
+                
                 <div id="messages" class="chat__messages"></div>
                 <div class="compose">
                     <form id="msg-form" class="chat-font">
                         <input placeholder="Message" name='message' required autocomplete="off">
-                        <button style="border-radius: 20px" >Submit</button>
+                        <button id="send-location" style="border-radius: 20px">SendLocation</button>
+                        <br><button style="border-radius: 20px" >Submit</button>
                     </form>
                 </div>
-                    <button id="send-location" style="border-radius: 20px">Send location</button>
-                    <br><button class="leave"><a href="index.html" class="btn">Leave Room</a></button>
-                
             </div>
         </div>
 

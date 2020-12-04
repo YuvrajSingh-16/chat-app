@@ -109,7 +109,8 @@ button:disabled {
 	padding: 15px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Chat styles */
@@ -175,10 +176,6 @@ button:disabled {
     font-size: 14px;
 }
 
-.leave{
-    background: #851fc0;
-    border-radius: 20px;
-}
 /* Chat Sidebar Styles */
 
 .room-title {
@@ -200,3 +197,11 @@ button:disabled {
     font-weight: 300;
     padding: 12px 24px 0 24px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="view"] {
+      width: 100%;
+    }
+  }
